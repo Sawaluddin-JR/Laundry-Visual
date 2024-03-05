@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F2F9581C-9106-4B14-A223-5F604381F15B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication2.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication2</RootNamespace>
+    <AssemblyName>WindowsApplication2</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WindowsApplication2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WindowsApplication2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormInfo.Designer.vb">
+      <DependentUpon>FormInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInputData.Designer.vb">
+      <DependentUpon>FormInputData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormInputData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.vb">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenu.Designer.vb">
+      <DependentUpon>FormMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPengiriman.Designer.vb">
+      <DependentUpon>FormPengiriman.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormPengiriman.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPenyerahan.Designer.vb">
+      <DependentUpon>FormPenyerahan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormPenyerahan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPenyimpananData.Designer.vb">
+      <DependentUpon>FormPenyimpananData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormPenyimpananData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormInfo.resx">
+      <DependentUpon>FormInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputData.resx">
+      <DependentUpon>FormInputData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenu.resx">
+      <DependentUpon>FormMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPengiriman.resx">
+      <DependentUpon>FormPengiriman.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPenyerahan.resx">
+      <DependentUpon>FormPenyerahan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPenyimpananData.resx">
+      <DependentUpon>FormPenyimpananData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checklist-graphic-icon-web-icons-png-616799.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checklist-graphic-icon-web-icons-png-616799-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2849818_navigation_right_multimedia_arrow_back_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3643781_check_checklist_complete_done_mark_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2849818_navigation_right_multimedia_arrow_back_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checklist-graphic-icon-web-icons-png-616799-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checklist-graphic-icon-web-icons-png-6167991.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3643781_check_checklist_complete_done_mark_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3131959_checklist_marketing_pointer_target_icon-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3131959_checklist_marketing_pointer_target_icon-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3017953_accomplishment_check_outline_success_triumph_icon-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3017953_accomplishment_check_outline_success_triumph_icon-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3017953_accomplishment_check_outline_success_triumph_icon-removebg-preview %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3017953_accomplishment_check_outline_success_triumph_icon-removebg-preview %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3017953_accomplishment_check_outline_success_triumph_icon-removebg-preview %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3017953_accomplishment_check_outline_success_triumph_icon-removebg-preview %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3017963_close_error_exit_failure_invalid_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngaaa.com-174585 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngaaa.com-174585 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngaaa.com-174585__1_-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngaaa.com-174585__1_-removebg-preview-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngaaa.com-174585__1_-removebg-preview-removebg-preview-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngaaa.com-174585__1_-removebg-preview-removebg-preview-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\washing machine laundry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\washing_machine_laundry-removebg-preview-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com-removebg-preview-removebg-preview-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com-removebg-preview-removebg-preview-removebg-preview-removebg-preview-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com-removebg-preview-removebg-preview-removebg-preview-removebg-preview-removebg-preview-removebg-preview-removebg-preview.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
